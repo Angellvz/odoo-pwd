@@ -1,0 +1,12 @@
+<odoo>
+    <template id="task_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="tarea">
+                <h2><t t-esc="tarea.name"/></h2>
+                <p><b>Asignado a:</b> <t t-esc="tarea.assigned_to.name"/></p>
+                <p><b>Fecha límite:</b> <t t-esc="tarea.deadline"/></p>
+                <p><b>Estado:</b> <t t-esc="tarea.status"/></p>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,9 @@
+<odoo>
+    <report
+        id="task_report"
+        model="task.manager"
+        string="Reporte de Tareas"
+        report_type="qweb-pdf"
+        file="task_manager.task_template"
+        name="task_manager.task_template"/>
+</odoo>
